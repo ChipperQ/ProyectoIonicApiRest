@@ -1,0 +1,26 @@
+<ion-header color="mycolor">
+  <br>
+  <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+</ion-header>
+
+
+
+
+<ion-content>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button [routerLink]="['../no-camara']">
+        <ion-icon name="camera-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button [routerLink]="['../post']">
+        <ion-icon name="albums-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button  [routerLink]="['../home']">
+        <ion-icon name="exit-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

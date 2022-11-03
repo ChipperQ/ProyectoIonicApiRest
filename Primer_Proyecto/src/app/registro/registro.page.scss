@@ -1,0 +1,20 @@
+ion-header{
+    background-color: var(--ion-color-mycolor);
+    
+}
+
+
+ion-img{
+    margin: 0 auto;
+    max-width: 30vh;
+    padding-bottom: 10px;
+  }
+  #container {
+    text-align: center;
+   
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+   }

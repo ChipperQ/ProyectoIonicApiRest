@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="post"></ion-back-button>
+        </ion-buttons>
+      <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <div *ngIf="listado.length > 0">
+    <div *ngFor="let aux of listado">
+      <ion-row>
+        <ion-col size="7">{{aux.email}}</ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-label>
+        <ion-col size="12">{{aux.body}}</ion-col>
+        </ion-label>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

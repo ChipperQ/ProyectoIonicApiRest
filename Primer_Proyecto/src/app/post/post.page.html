@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="inicio"></ion-back-button>
+        </ion-buttons>
+      <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let aux of listado" [routerLink]="['../coments/', aux.id]">
+      <ion-label>{{aux.title}}</ion-label>
+    </ion-item> 
+</ion-list>
+</ion-content>
