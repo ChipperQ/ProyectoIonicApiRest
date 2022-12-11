@@ -1,0 +1,30 @@
+{
+  "Usuiarios":
+  [
+      {"id": 1,"Nombres": "Diego Antonio", "Apellidos": "Abarca Moya","rol":"estudiantes"},
+      {"id": 2,"Nombres": "Kamila Antonia", "Apellidos": "Burgos quiroz","rol":"estudiantes"},
+      {"id": 3,"Nombres": "Gustavo Agustin", "Apellidos": "Zamora Rojas","rol":"estudiantes"},
+      {"id": 4,"Nombres": "Martin Antonio", "Apellidos": "Abarca Silva", "rol":"estudiantes"},
+      {"id": 5,"Nombres": "Millaray Belen", "Apellidos": "Silva Labbe", "rol":"estudiantes"},
+      {"id": 6,"Nombres": "Guillermo Marcelo", "Apellidos": "Marin Sanchez", "rol":"estudiantes"}
+  ],
+  "Profesor":[
+     {"Id": 7, "Nombres":"PATRICIO ALEJANDRO", "Apellidos": "YAÑEZ AHUMADA","rol":"Profesor"},
+      {"Id": 8, "Nombres":"LUIS ALFONSO", "Apellidos": "SEPULVEDA GOMEZ","rol":"Profesor"},
+      {"Id": 9, "Nombres":"KARINA VICTORIA", "Apellidos": "ALVAREZ ZAMORANO","rol":"Profesor"},
+      {"Id": 10, "Nombres":"JOSÉ LUIS", "Apellidos": "PINO COFRÉ","rol":"Profesor"},
+      {"Id": 11, "Nombres":"MAGDALENA AGUSTINA", "Apellidos": "NIETO GUTIERREZ","rol":"Profesor"},
+      {"Id": 12, "Nombres":"MARLON ADRIAN", "Apellidos": "GARRIDO CAMPOS","rol":"Profesor"},
+      {"Id": 13, "Nombres":"PATRICIO DAVID", "Apellidos": "ARANGUIZ ROJO","rol":"Profesor"}
+  ],
+  "Materias":
+  [
+      {"Id":1,"Nombre": "Arquitectura","Siglas": "PO_ASY4131", "Seccion":"001D", "IdProfesor":7},
+      {"Id":1,"Nombre": "Programacion de aplicaciones moviles","Siglas": "PO_PGY4121", "Seccion":"001D","IdProfesor":7},
+      {"Id":1,"Nombre": "Calidad de software","Siglas": "PO_CSY4111", "Seccion":"001D","IdProfesor":7},
+      {"Id":1,"Nombre": "Programacion web","Siglas": "PO_INI5111", "Seccion":"006D","IdProfesor":7},
+      {"Id":1,"Nombre": "Programacion de software de escritorio","Siglas": "PO_EAY4470", "Seccion":"001D","IdProfesor":7},
+      {"Id":1,"Nombre": "Programacion de algoritmos","Siglas": "PO_MAT4140", "Seccion":"006D","IdProfesor":7}
+  ]
+
+}

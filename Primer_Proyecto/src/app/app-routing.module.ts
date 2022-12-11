@@ -36,6 +36,15 @@ const routes: Routes = [
     path: 'no-camara',
     loadChildren: () => import('./no-camara/no-camara.module').then( m => m.NoCamaraPageModule)
   },
+  {
+    path: 'camara',
+    loadChildren: () => import('./camara/camara.module').then( m => m.CamaraPageModule)
+  },  {
+    path: 'estudiantes',
+    loadChildren: () => import('./estudiantes/estudiantes.module').then( m => m.EstudiantesPageModule)
+  },
+
+
 
 
 

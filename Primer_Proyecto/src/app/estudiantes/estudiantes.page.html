@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="inicio"></ion-back-button>
+        </ion-buttons>
+      <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <ion-list>
+          <ion-item *ngFor="let character of listado">
+            <ion-avatar slot="start">
+              <ion-icon name="person-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label>{{character.Nombres}}</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

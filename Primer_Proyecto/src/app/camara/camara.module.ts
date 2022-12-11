@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { InicioPageRoutingModule } from './inicio-routing.module';
+import { CamaraPageRoutingModule } from './camara-routing.module';
 import { QRCodeModule } from 'angularx-qrcode';
-import { InicioPage } from './inicio.page';
+import { CamaraPage } from './camara.page';
 
 @NgModule({
   imports: [
@@ -14,8 +13,8 @@ import { InicioPage } from './inicio.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule
+    CamaraPageRoutingModule
   ],
-  declarations: [InicioPage]
+  declarations: [CamaraPage]
 })
-export class InicioPageModule {}
+export class CamaraPageModule {}

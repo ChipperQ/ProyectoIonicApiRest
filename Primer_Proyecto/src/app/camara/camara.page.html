@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="inicio"></ion-back-button>
+        </ion-buttons>
+      <ion-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+  </ion-toolbar>
+  </ion-header>
+<ion-content>
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Programacion de aplicaciones moviles</ion-label>
+        </ion-item>
+        <div  class="ion-padding" slot="content">
+          <ion-button  expand="full" (click)="starscan()" color="dark">
+            Escanear
+           </ion-button>
+           <ion-button  expand="full" (click)="create()" color="dark">
+            Generar Qr
+           </ion-button>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>Arquitectura</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-button  expand="full" (click)="starscan()" color="dark">
+            Escanear
+           </ion-button>
+           <ion-button  expand="full" (click)="create()" color="dark">
+            Generar Qr
+           </ion-button>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>Calidad de software</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-button  expand="full" (click)="starscan()" color="dark">
+            Escanear
+           </ion-button>
+           <ion-button  expand="full" (click)="create()" color="dark">
+            Generar Qr
+           </ion-button>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="fourth">
+        <ion-item slot="header" color="light">
+          <ion-label>Programacion de software de escritorio</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-button  expand="full" (click)="starscan()" color="dark">
+            Escanear
+           </ion-button>
+           <ion-button  expand="full" (click)="create()" color="dark">
+            Generar Qr
+           </ion-button>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="fifth">
+        <ion-item slot="header" color="light">
+          <ion-label>Programacion de algoritmos</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-button  expand="full" (click)="starscan()" color="dark">
+            Escanear
+           </ion-button>
+           <ion-button  expand="full" (click)="create()" color="dark">
+            Generar Qr
+           </ion-button>
+        </div>
+      </ion-accordion>
+      <ion-accordion value="sixth">
+        <ion-item slot="header" color="light">
+          <ion-label>Programacion web</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-button  expand="full" (click)="starscan()"  color="dark">
+            Escanear
+           </ion-button>
+           <ion-button  expand="full" (click)="create()" color="dark">
+            Generar Qr
+           </ion-button>
+        </div>
+      </ion-accordion> 
+    </ion-accordion-group>  
+    
+  <video #video [hidden]="!scanActive" width="100%"></video>
+  <canvas #canvas hidden></canvas>
+  <ion-button expand="full" (click)="stopscan()" color="warning" *ngIf="scanActive">
+    <ion-icon slot="start" name="close"></ion-icon>
+    Parar Camara
+   </ion-button>    
+ <ion-card *ngIf="createCode">
+   <qrcode [qrdata]="createCode"></qrcode>
+    <ion-card-content>
+    Your QR Code : {{createCode}}
+    </ion-card-content>
+    <ion-button  expand="full" (click)="clear()" color="dark">
+     limpiar Qr
+    </ion-button>
+ </ion-card>
+<ion-card *ngIf="scanResult">
+    <ion-card-header>
+      <ion-card-title>Codigo QR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ scanResult }}
+    </ion-card-content>
+   </ion-card>
+</ion-content>
+

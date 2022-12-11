@@ -8,12 +8,16 @@
   </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>No Camara</ion-card-title>
-    </ion-card-header>
-    <ion-img src="https://i.imgflip.com/64sz4u.png?a463128" ></ion-img>
-    <ion-card-content>      
-    </ion-card-content>
-  </ion-card>
+  <div *ngIf="listado.length > 0">
+    <div *ngFor="let aux of listado">
+      <ion-row>
+        <ion-col size="7">{{aux.Nombre}}</ion-col>
+        </ion-row>
+        <ion-row>
+        <ion-label>
+        <ion-col size="12">{{aux.Siglas}}</ion-col>
+        </ion-label>
+      </ion-row>
+    </div>
+  </div>
 </ion-content>

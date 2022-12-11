@@ -9,6 +9,7 @@ export class CrudService {
   listado = [];
   item : any;
   private urlBaseApi = 'https://jsonplaceholder.typicode.com/';
+  private urlDB = 'http://localhost:3000';
   constructor(private httpClient: HttpClient, private storage: Storage) {this.init(); }
   
   async init()
@@ -53,6 +54,40 @@ export class CrudService {
   getComments(id: string)
   {
     let url = this.urlBaseApi + 'posts/'+ id +"/comments";
+    this.listado = [];
+    return new Promise((resolve, rejects) => 
+    {
+      this.httpClient.get(url).subscribe((data:[]) =>
+      {
+        resolve(data);
+        data.forEach(item => { this.listado.push(item); })
+      },
+      error =>
+      {
+        console.log("Error en el servidor")
+      })
+    });
+  }
+  getMaterias()
+  {
+    let url = this.urlDB + '/Materias';
+    this.listado = [];
+    return new Promise((resolve, rejects) => 
+    {
+      this.httpClient.get(url).subscribe((data:[]) =>
+      {
+        resolve(data);
+        data.forEach(item => { this.listado.push(item); })
+      },
+      error =>
+      {
+        console.log("Error en el servidor")
+      })
+    });
+  }
+  getEstudiantes()
+  {
+    let url = this.urlDB + '/Usuiarios';
     this.listado = [];
     return new Promise((resolve, rejects) => 
     {
