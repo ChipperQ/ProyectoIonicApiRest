@@ -27,19 +27,6 @@ export class CamaraPage implements OnInit {
     this.canvasContext = this.canvasElement.getContext('2d');
   }
   ngOnInit() {
-    this.listar();
-  }
-  async create() {
-    this.createCode ="JX39BTEG";
-    this.scanActive = false;
-    }
-    
-  async clear() {
-    this.createCode ='';
-    }
-    async listar(){  
-      this.api.getMaterias();
-      this.listado = this.api.listado;
   }
   captar(){
     this.barcodeScanner.scan().then(barcodeData => {
