@@ -70,7 +70,7 @@ export class CrudService {
   }
   getMaterias()
   {
-    let url = this.urlDB + '/Materias';
+    let url = this.urlDB + '/Materias?IdProfesor=7';
     this.listado = [];
     return new Promise((resolve, rejects) => 
     {
@@ -85,9 +85,9 @@ export class CrudService {
       })
     });
   }
-  getEstudiantes()
+  getEstudiantes(id: string)
   {
-    let url = this.urlDB + '/Usuiarios';
+    let url = this.urlDB + '/Usuiarios?rol=estudiantes&Seccion='+ id;
     this.listado = [];
     return new Promise((resolve, rejects) => 
     {
@@ -102,5 +102,6 @@ export class CrudService {
       })
     });
   }
+  
   /// leer documentación de la pagina jsonplaceholder
 }

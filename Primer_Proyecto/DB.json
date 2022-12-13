@@ -1,30 +1,44 @@
 {
   "Usuiarios":
   [
-      {"id": 1,"Nombres": "Diego Antonio", "Apellidos": "Abarca Moya","rol":"estudiantes"},
-      {"id": 2,"Nombres": "Kamila Antonia", "Apellidos": "Burgos quiroz","rol":"estudiantes"},
-      {"id": 3,"Nombres": "Gustavo Agustin", "Apellidos": "Zamora Rojas","rol":"estudiantes"},
-      {"id": 4,"Nombres": "Martin Antonio", "Apellidos": "Abarca Silva", "rol":"estudiantes"},
-      {"id": 5,"Nombres": "Millaray Belen", "Apellidos": "Silva Labbe", "rol":"estudiantes"},
-      {"id": 6,"Nombres": "Guillermo Marcelo", "Apellidos": "Marin Sanchez", "rol":"estudiantes"}
-  ],
-  "Profesor":[
-     {"Id": 7, "Nombres":"PATRICIO ALEJANDRO", "Apellidos": "YAÑEZ AHUMADA","rol":"Profesor"},
+      {"id": 1,"Nombres": "Diego Antonio", "Apellidos": "Abarca Moya","rol":"estudiantes", "Seccion":"001D"},
+      {"id": 2,"Nombres": "Kamila Antonia", "Apellidos": "Burgos quiroz","rol":"estudiantes", "Seccion":"001D"},
+      {"id": 3,"Nombres": "Gustavo Agustin", "Apellidos": "Zamora Rojas","rol":"estudiantes", "Seccion":"002D"},
+      {"id": 4,"Nombres": "Martin Antonio", "Apellidos": "Abarca Silva", "rol":"estudiantes", "Seccion":"002D"},
+      {"id": 5,"Nombres": "Millaray Belen", "Apellidos": "Silva Labbe", "rol":"estudiantes", "Seccion":"001D"},
+      {"id": 6,"Nombres": "Guillermo Marcelo", "Apellidos": "Marin Sanchez", "rol":"estudiantes", "Seccion":"002D"},
+      {"Id": 7, "Nombres":"PATRICIO ALEJANDRO", "Apellidos": "YAÑEZ AHUMADA","rol":"Profesor"},
       {"Id": 8, "Nombres":"LUIS ALFONSO", "Apellidos": "SEPULVEDA GOMEZ","rol":"Profesor"},
       {"Id": 9, "Nombres":"KARINA VICTORIA", "Apellidos": "ALVAREZ ZAMORANO","rol":"Profesor"},
       {"Id": 10, "Nombres":"JOSÉ LUIS", "Apellidos": "PINO COFRÉ","rol":"Profesor"},
       {"Id": 11, "Nombres":"MAGDALENA AGUSTINA", "Apellidos": "NIETO GUTIERREZ","rol":"Profesor"},
       {"Id": 12, "Nombres":"MARLON ADRIAN", "Apellidos": "GARRIDO CAMPOS","rol":"Profesor"},
-      {"Id": 13, "Nombres":"PATRICIO DAVID", "Apellidos": "ARANGUIZ ROJO","rol":"Profesor"}
+      {"Id": 13, "Nombres":"PATRICIO DAVID", "Apellidos": "ARANGUIZ ROJO","rol":"Profesor"},
+      {"id": 14,"Nombres": "Mario Marcelo", "Apellidos": "rojas pinto", "rol":"estudiantes", "Seccion":"005D"},
+      {"id": 15,"Nombres": "Martina julieta", "Apellidos": "Abarca Silva", "rol":"estudiantes", "Seccion":"005D"},
+      {"id": 16,"Nombres": "antonia violeta", "Apellidos": "pino campos", "rol":"estudiantes", "Seccion":"005D"},
+      {"id": 17,"Nombres": "camilo andres", "Apellidos": "gonzales correa", "rol":"estudiantes", "Seccion":"006D"},
+      {"id": 18,"Nombres": "Maria jose", "Apellidos": "rojo ahumada", "rol":"estudiantes", "Seccion":"006D"},
+      {"id": 18,"Nombres": "Kimberly antonia", "Apellidos": "gonzales rojas", "rol":"estudiantes", "Seccion":"006D"}
   ],
   "Materias":
   [
-      {"Id":1,"Nombre": "Arquitectura","Siglas": "PO_ASY4131", "Seccion":"001D", "IdProfesor":7},
-      {"Id":1,"Nombre": "Programacion de aplicaciones moviles","Siglas": "PO_PGY4121", "Seccion":"001D","IdProfesor":7},
-      {"Id":1,"Nombre": "Calidad de software","Siglas": "PO_CSY4111", "Seccion":"001D","IdProfesor":7},
-      {"Id":1,"Nombre": "Programacion web","Siglas": "PO_INI5111", "Seccion":"006D","IdProfesor":7},
-      {"Id":1,"Nombre": "Programacion de software de escritorio","Siglas": "PO_EAY4470", "Seccion":"001D","IdProfesor":7},
-      {"Id":1,"Nombre": "Programacion de algoritmos","Siglas": "PO_MAT4140", "Seccion":"006D","IdProfesor":7}
+      {"Id":1,"Nombre": "Arquitectura","Siglas": "PO_ASY4131", "Seccion":"001D", "IdProfesor":10},
+      {"Id":2,"Nombre": "Arquitectura","Siglas": "PO_ASY4131", "Seccion":"003D", "IdProfesor":10},
+      {"Id":3,"Nombre": "Arquitectura","Siglas": "PO_ASY4131", "Seccion":"006D", "IdProfesor":10},
+      {"Id":4,"Nombre": "Programacion web","Siglas": "PO_INI5111", "Seccion":"006D","IdProfesor":7},
+      {"Id":5,"Nombre": "Programacion web","Siglas": "PO_MAT4140", "Seccion":"005D","IdProfesor":7},
+      {"Id":6,"Nombre": "Calidad de software","Siglas": "PO_CSY4111", "Seccion":"001D","IdProfesor":11},
+      {"Id":7,"Nombre": "Calidad de software","Siglas": "PO_CSY4111", "Seccion":"002D","IdProfesor":11},
+      {"Id":8,"Nombre": "Calidad de software","Siglas": "PO_CSY4111", "Seccion":"003D","IdProfesor":11},
+      {"Id":9,"Nombre": "Calidad de software","Siglas": "PO_CSY4111", "Seccion":"004D","IdProfesor":11},         
+      {"Id":10,"Nombre": "Programacion de software de escritorio","Siglas": "PO_EAY4470", "Seccion":"001D","IdProfesor":7},
+      {"Id":11,"Nombre": "Programacion de software de escritorio","Siglas": "PO_MAT4140", "Seccion":"006D","IdProfesor":7},
+      {"Id":12,"Nombre": "Programacion de aplicaciones moviles","Siglas": "PO_PGY4121", "Seccion":"001D","IdProfesor":7},
+      {"Id":13,"Nombre": "Programacion de aplicaciones moviles","Siglas": "PO_MAT4140", "Seccion":"005D","IdProfesor":7},
+      {"Id":14,"Nombre": "Programacion de aplicaciones moviles","Siglas": "PO_MAT4140", "Seccion":"004D","IdProfesor":7},
+      {"Id":15,"Nombre": "Programacion de algoritmos","Siglas": "PO_MAT4110", "Seccion":"005D","IdProfesor":7},
+      {"Id":16,"Nombre": "Programacion de algoritmos","Siglas": "PO_MAT4110", "Seccion":"004D","IdProfesor":7}
   ]
 
 }

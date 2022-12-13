@@ -4,6 +4,18 @@
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <ion-item *ngFor="let Mat of listado" [routerLink]="['../estudiantes/', Mat.Seccion]" detail=false>
+      <ion-card-subtitle>{{Mat.Nombre}} -</ion-card-subtitle>
+      <ion-card-subtitle>{{Mat.Seccion}}</ion-card-subtitle>
+      <ion-button slot="end" shape="round" [routerLink]="['../qr/', Mat.Seccion]">
+       Qr
+      </ion-button>
+      
+    </ion-item>
+   </ion-card>
+
   <ion-fab slot="fixed" vertical="bottom" horizontal="start">
     <ion-fab-button>
       <ion-icon name="chevron-up-circle"></ion-icon>
@@ -14,9 +26,6 @@
       </ion-fab-button>
       <ion-fab-button [routerLink]="['../post']">
         <ion-icon name="albums-outline"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button  [routerLink]="['../estudiantes']">
-        <ion-icon name="people-circle-outline"></ion-icon>
       </ion-fab-button>
       <ion-fab-button  [routerLink]="['../home']">
         <ion-icon name="exit-outline"></ion-icon>
